@@ -39,6 +39,6 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: {{ .Values.serviceAccount }}
-    namespace: {{ .Values.namespace | default "default-namespace" }}  # Ensure namespace is present
+    namespace: {{ .Values.namespace | default "egov" }}  # Ensure namespace is present
 {{- end -}}
 
