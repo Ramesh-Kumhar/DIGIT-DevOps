@@ -1,26 +1,3 @@
-# {{- $envOverrides := index .Values (tpl .Chart.Name .) -}} 
-# {{- $baseValues := .Values | deepCopy -}}
-# {{- $values := dict "Values" (mustMergeOverwrite $baseValues $envOverrides) -}}
-# {{- with mustMergeOverwrite . $values }}
-# apiVersion: rbac.authorization.k8s.io/v1
-# kind: ClusterRoleBinding
-# metadata:
-#   labels:
-#     app: {{ .Chart.Name }}
-#     group: gateway
-#   name: {{ .Chart.Name }}
-# roleRef:
-#   apiGroup: rbac.authorization.k8s.io
-#   kind: ClusterRole
-#   name: {{ .Chart.Name }}
-# subjects:
-#   - kind: ServiceAccount
-#     name: {{ .Values.serviceAccount }}
-#     namespace: {{ .Values.namespace }} 
-# {{- end -}}  
-
-#Newfile is added 
-
 {{- $envOverrides := index .Values (tpl .Chart.Name .) -}} 
 {{- $baseValues := .Values | deepCopy -}}
 {{- $values := dict "Values" (mustMergeOverwrite $baseValues $envOverrides) -}}
@@ -39,6 +16,29 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: {{ .Values.serviceAccount }}
-    namespace: {{ .Values.namespace | default "egov" }}  # Ensure namespace is present
-{{- end -}}
+    namespace: {{ .Values.namespace }} 
+{{- end -}}  
+
+# #Newfile is added 
+
+# {{- $envOverrides := index .Values (tpl .Chart.Name .) -}} 
+# {{- $baseValues := .Values | deepCopy -}}
+# {{- $values := dict "Values" (mustMergeOverwrite $baseValues $envOverrides) -}}
+# {{- with mustMergeOverwrite . $values }}
+# apiVersion: rbac.authorization.k8s.io/v1
+# kind: ClusterRoleBinding
+# metadata:
+#   labels:
+#     app: {{ .Chart.Name }}
+#     group: gateway
+#   name: {{ .Chart.Name }}
+# roleRef:
+#   apiGroup: rbac.authorization.k8s.io
+#   kind: ClusterRole
+#   name: {{ .Chart.Name }}
+# subjects:
+#   - kind: ServiceAccount
+#     name: {{ .Values.serviceAccount }}
+#     namespace: {{ .Values.namespace | default "egov" }}  # Ensure namespace is present
+# {{- end -}}
 
