@@ -19,8 +19,8 @@ initContainers:
       tag: core-2.9-lts-mvn-check-5f0cc52126-55
   gitSync:
     enabled: true
-    repo: "git@github.com:egovernments/configs"
-    branch: "master"
+    repo: "git@github.com:Ramesh-Kumhar/configs"
+    branch: "DEV"
 
 # Container Configs
 image:
