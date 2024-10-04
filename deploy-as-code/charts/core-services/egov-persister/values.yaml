@@ -7,8 +7,8 @@ labels:
 initContainers:
   gitSync:
     enabled: true
-    repo: "git@github.com:egovernments/configs"
-    branch: "UAT"
+    repo: "git@github.com:Ramesh-Kumhar/configs"
+    branch: "DEV"
 
 # Container Configs
 image:
