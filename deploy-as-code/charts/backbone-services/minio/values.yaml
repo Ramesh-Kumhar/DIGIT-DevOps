@@ -17,7 +17,7 @@ global:
   ##   - myRegistryKeySecretName
   ##
   imagePullSecrets: []
-  storageClass: "gp2"
+  storageClass: ""
 
 ## @section Common parameters
 
