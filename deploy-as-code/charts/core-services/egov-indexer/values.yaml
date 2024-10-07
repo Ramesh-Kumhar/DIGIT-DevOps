@@ -19,8 +19,8 @@ initContainers:
       tag: 2.9.1-c781a2f714-65
   gitSync:
     enabled: true
-    repo: "git@github.com:Ramesh-Kumhar/configs"
-    branch: "DEV"
+    repo: "git@github.com:egovernments/configs"
+    branch: "UNIFIED-DEV"
 
 # Container Configs
 image:
