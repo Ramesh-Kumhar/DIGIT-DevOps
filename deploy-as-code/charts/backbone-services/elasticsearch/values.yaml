@@ -110,7 +110,6 @@ volumeClaimTemplate:
   resources:
     requests:
       storage: 2Gi
-  storageClassName: gp2
 
 rbac:
   create: false
