@@ -6,7 +6,7 @@ cluster_name: "dev-piramal"
 # Replace with ssh key name you want
 ssh_key_name: "piramal-ssh-key" 
 
-# Replace with public key which you want to add in your EC2 machines # ssh key which you want to add in your EC2 machines
+# Replace with public key which you want to add in your EC2 machines # ssh key which you want to add in your EC2 machine
 public_ssh_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCoN3nouZLx3PVMu1TKPYu18AAOfl+J4Y9gHrEtqbh+PoBgbVefEewxrRF6C1N/35SehgVLAawLnGJOhikrx3qjXg4dX/KQ0Vz53FjjagNfk1Elaw/wtI+TOoXfJ0O6F+v2sr74SZ2d0oZvwQqIdFK9WIpJ6F4U7giZlMckfA1uulYX/f2i4kZ/vNiatO1RVrB5XWXSDPntOSSSwGBHkig7kOkhRwvYwgnVXrj9//KbPn7Y7Q8WZCx74l28i9Hg1OT9bZVKUM/dQVrEStnR0dCMnKInX+hdX8l1T2O68mEmODRrMv1sjcTq27JdoFNyWmpoRz7WaR9ErB/UeOqD/GRF"
 
 # Name you want to give to your Database
