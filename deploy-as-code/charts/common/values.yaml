@@ -61,7 +61,7 @@ initContainers:
                 key: flyway-locations
 
   gitSync:
-    enabled: true
+    enabled: false
     image:
       repository: k8s.gcr.io/git-sync
       tag: v3.1.1
