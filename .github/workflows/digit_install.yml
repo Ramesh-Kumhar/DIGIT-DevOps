@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - DIGIT-2.9LTS
+      - 2.9.1
   workflow_dispatch:
     inputs:
       destroyCommand:
