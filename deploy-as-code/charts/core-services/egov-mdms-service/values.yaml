@@ -22,7 +22,7 @@ initContainers:
 image:
   repository: "egov-mdms-service"
   # repository: "egovio/mdms-v2"
-  tag: DIGIT-2.9-LTS-07f47790b8-14
+  tag: latest
   # tag: MDMS-v2-2.9LTS-837232ac67-71
 replicas: "1"
 healthChecks:
