@@ -47,6 +47,7 @@ releases:
     <<: *default
 
   - name: mdms-v2 # Replace with your desired namespace
+    chart: deploy-as-code/charts/core-services/mdms-v2
     installed: true
     <<: *default
 
