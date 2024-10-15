@@ -10,6 +10,8 @@ templates:
     values:
       - ../environments/env-secrets.yaml
       - ../environments/env.yaml
+      - ../core-services/mdms-v2/values.yaml
+       - ../core-services/mdms-v2/chart.yaml
 
 releases:
   - name: egov-accesscontrol # Replace with your desired namespace
