@@ -25,6 +25,10 @@ releases:
     needs:
     - egov-mdms-service
     <<: *default
+    
+  - name: mdms-v2 # Replace with your desired namespace
+    installed: true
+    <<: *default
 
   - name: egov-filestore # Replace with your desired namespace
     installed: true
