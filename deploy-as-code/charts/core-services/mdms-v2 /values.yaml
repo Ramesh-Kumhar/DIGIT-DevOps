@@ -14,11 +14,13 @@ initContainers:
     enabled: true
     schemaTable: "mdms_v2_schema"
     image:
-      repository: "mdms-v2-db"
+      repository: "egovio/mdms-v2-db"
+      tag: MDMS-v2-2.9LTS-837232ac67-71
 
 # Container Configs
 image:
-  repository: "mdms-v2"
+  repository: "egovio/mdms-v2"
+  tag: MDMS-v2-2.9LTS-837232ac67-71
 replicas: "1"
 healthChecks:
   enabled: true
