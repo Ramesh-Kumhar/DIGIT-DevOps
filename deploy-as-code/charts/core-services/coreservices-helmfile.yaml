@@ -23,7 +23,7 @@ releases:
   - name: egov-enc-service # Replace with your desired namespace
     installed: true
     needs:
-    - mdms-v2
+    - egov-mdms-service
     <<: *default
     
   - name: mdms-v2 # Replace with your desired namespace
@@ -89,7 +89,7 @@ releases:
   - name: egov-workflow-v2 # Replace with your desired namespace
     installed: true
     needs:
-    - mdms-v2
+    - egov-mdms-service
     <<: *default
 
   - name: user-otp # Replace with your desired namespace
