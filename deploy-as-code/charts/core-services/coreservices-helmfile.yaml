@@ -43,7 +43,7 @@ releases:
     <<: *default
 
   - name: egov-mdms-service # Replace with your desired namespace
-    installed: true
+    installed: false
     <<: *default
 
   - name: mdms-v2 # Replace with your desired namespace
