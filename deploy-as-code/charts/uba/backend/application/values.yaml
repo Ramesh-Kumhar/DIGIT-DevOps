@@ -18,13 +18,13 @@ initContainers:
     enabled: true
     schemaTable: "application_schema"
     image:
-      repository: "prsm323/applicationpiramal"
-      tag: latest-db
+      repository: "egovio/flyway"
+      tag: 10.7.1
 
 # Container Configs
 image:
   repository: "prsm323/applicationpiramal"
-  tag: 202410161718
+  tag: latest
 replicas: "1"
 healthChecks:
   enabled: true
@@ -56,7 +56,7 @@ env: |
     valueFrom:
       configMapKeyRef:
         name: egov-service-host
-        key: egov-mdms-service-v2
+        key: mdms-service-v2
   {{- if index .Values "java-enable-debug" }}
   - name: JAVA_ENABLE_DEBUG
     value: "true"
