@@ -3,7 +3,7 @@ labels:
   app: "application"
   group: "digit-works"
 
-namespace: works
+namespace: egov
 
 # Ingress Configs
 ingress:
