@@ -1,1 +1,2 @@
-{{- template "common.deployment" . -}}  
+# deployment.yaml
+{{- template "common.deployment" . -}}
