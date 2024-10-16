@@ -22,7 +22,8 @@ initContainers:
 
 # Container Configs
 image:
-  repository: "application"
+  repository: "prsm323/applicationpiramal"
+  tag: 202410161718
 replicas: "1"
 healthChecks:
   enabled: true
