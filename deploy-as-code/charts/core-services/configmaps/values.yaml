@@ -140,6 +140,7 @@ configmaps:
       egov-pdf: "http://egov-pdf.egov:8080/"
       egov-user-event: "http://egov-user-event.egov:8080/"
       mdms-service-v2: "http://mdms-v2.egov:8080/"
+      uba-application-host: "http://application.works:8080/"
       health-project: 'http://health-project.health:8080/'
       health-individual: 'http://health-individual.health:8080/'
 
