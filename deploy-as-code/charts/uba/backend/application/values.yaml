@@ -18,7 +18,8 @@ initContainers:
     enabled: true
     schemaTable: "application_schema"
     image:
-      repository: "application-db"
+      repository: "prsm323/applicationpiramal"
+      tag: latest-db
 
 # Container Configs
 image:
