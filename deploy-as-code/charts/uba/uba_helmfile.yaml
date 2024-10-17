@@ -1,6 +1,6 @@
 releases:
 - name: application
-  chart: ./charts/uba/backend/application
+  chart: ./charts/uba/backend/
   namespace: egov
   installed: true
   version: 0.1.0
