@@ -1,6 +1,15 @@
 repositories:
 - name: bitnami
   url: https://charts.bitnami.com/bitnami
+
+templates: 
+  default: &default
+    namespace: backbone
+    missingFileHandler: Warn
+
+values:
+  - ../environments/env-secrets.yaml
+  - ../environments/env.yaml
   
 releases:
 - name: application
