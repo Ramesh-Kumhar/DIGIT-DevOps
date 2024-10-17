@@ -3,15 +3,14 @@ configmaps:
     name: egov-config
     namespace: egov
     data:
-      db-host: "postgresql.backbone:5432" ## Add db-host name eg: egov-demo.database.azure.com
-      db-name: "postgres" ## Add db-name
-      db-url: "jdbc:postgresql://postgresql.backbone:5432/postgres" ## example: jdbc:postgresql://egov-demo.postgres.database.azure.com:5432/egov_demo
-      # db-host: dev-piramal-db.cnmaw2uc6xfw.ap-south-1.rds.amazonaws.com ## Add db-host name eg: egov-demo.database.azure.com
-      # db-name: piramaldevdb ## Add db-name
-      # db-url: "jdbc:postgresql://dev-piramal-db.cnmaw2uc6xfw.ap-south-1.rds.amazonaws.com/piramaldevdb"
-      domain: "digit-lts.digit.org" ## Add your Domain Name    
-      egov-services-fqdn-name: "https://digit-lts.digit.org/"
-      #egov-services-fqdn-name: "https://devpiramal.tekdinext.com/" ## Add your Domain Name
+      # db-host: "postgresql.backbone:5432" ## Add db-host name eg: egov-demo.database.azure.com
+      # db-name: "postgres" ## Add db-name
+      # db-url: "jdbc:postgresql://postgresql.backbone:5432/postgres" ## example: jdbc:postgresql://egov-demo.postgres.database.azure.com:5432/egov_demo
+      db-host: dev-piramal-db.cnmaw2uc6xfw.ap-south-1.rds.amazonaws.com ## Add db-host name eg: egov-demo.database.azure.com
+      db-name: piramaldevdb ## Add db-name
+      db-url: "jdbc:postgresql://dev-piramal-db.cnmaw2uc6xfw.ap-south-1.rds.amazonaws.com/piramaldevdb"
+      domain: "devpiramal.tekdinext.com" ## Add your Domain Name
+      egov-services-fqdn-name: "https://devpiramal.tekdinext.com/" ## Add your Domain Name
       flywayUsername: devpiramal
       flywayPassword: devpiramal1234  
       egov-state-level-tenant-id: "pg" 
