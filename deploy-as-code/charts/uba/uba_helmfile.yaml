@@ -8,5 +8,3 @@ releases:
   namespace: egov
   installed: true
   version: 0.1.0
-  values:
-    - ./backend/application/values.yaml
