@@ -17,12 +17,12 @@ initContainers:
     enabled: true
     schemaTable: "application_schema"
     image:
-      repository: "prsm323/applicationpiramal"
-      tag: latest-db
+      repository: "prsm323/application-db"
+      tag: latest
 
 # Container Configs
 image:
-  repository: "prsm323/applicationpiramal"
+  repository: "prsm323/application"
   tag: latest
 replicas: "1"
 healthChecks:
